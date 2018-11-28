@@ -14,7 +14,7 @@ Easy organization of multiple virtual environments and simple streamlined comman
 
 ## Installation Process    
 ### Basic virtualenv    
-```shell
+```bash
 $ pip install virtualenv
 $ virtualenv ENV
 $ source bin/activate
@@ -22,33 +22,33 @@ $ source bin/activate
 ## Virtualenvwrapper
 
 ### Install the package
-```
+```bash
 $ pip install virtualenvwrapper
 ```
 ### Create a home directory for all your projects/envs
-```
+```bash
 $ export ENVS_HOME=~/Envs
 $ mkdir -p $ENVS_HOME
 ```
 
 ### Change Shell Start up File Path
-```
+```bash
 $ source /usr/local/bin/virtualenvwrapper.sh
 ```
 
 ### Create new environments/projects    
-```
+```bash
 $ mkvirtualenv env_1
 $ mkvirtualenv env_2
 $ mkvirtualenv env_3
 ```
 
 ### View Available Environments    
-```
+```bash
 $ ls $ENVS_HOME
 ```
 
 ### Swap projects/environments    
-```
+```bash
 (env_1)$ workon env_2
 ```
