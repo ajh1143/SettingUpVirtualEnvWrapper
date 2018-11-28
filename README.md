@@ -58,3 +58,18 @@ $ lsvirtualenv
 ```bash
 (env_1)$ workon env_2
 ```
+
+### Remove an environment
+```bash
+rmvirtualenv env_1
+```
+
+### Deactivate
+```bash
+(env_1)$ deactivate
+```
+
+### Virtualenv Directory Shortcut
+```bash
+(env_1)$ cdvirtualenv
+```
