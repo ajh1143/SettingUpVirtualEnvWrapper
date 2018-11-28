@@ -28,16 +28,16 @@ Use pip to install the package.
 ```bash
 $ pip install virtualenvwrapper
 ```
-### Create a home directory for all your projects/envs
-Now that we've installed `virtualenvwrapper`, let's start using it. We'll first set an environmental variable `WORKON_HOME`, and point it to our target folder `/Envs` rather than the default `~/.virtualenvs` location. 
+### Create a home directory for all your virtual environments.
+Now that we've installed `virtualenvwrapper`, let's start using it. We'll first set an environmental variable `WORKON_HOME`, and point it to our target folder `/Envs` rather than the default `~/.virtualenvs` location.
+
+We will do the same for projects with `PROJECT_HOME`.
+
+**Add the following to your Shell start up file.**
 ```bash
 $ export WORKON_HOME=~/Envs
+$ export PROJECT_HOME=$WORKON_HOME/Projects
 $ mkdir -p $WORKON_HOME
-```
-
-### Change Shell Start up File Path
-```bash
-$ source /usr/local/bin/virtualenvwrapper.sh
 ```
 
 ### Create new environments/projects   
