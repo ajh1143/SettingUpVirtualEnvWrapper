@@ -27,8 +27,8 @@ $ pip install virtualenvwrapper
 ```
 ### Create a home directory for all your projects/envs
 ```bash
-$ export ENVS_HOME=~/Envs
-$ mkdir -p $ENVS_HOME
+$ export WORKON_HOME=~/Envs
+$ mkdir -p $WORKON_HOME
 ```
 
 ### Change Shell Start up File Path
@@ -45,7 +45,7 @@ $ mkvirtualenv env_3
 
 ### View Available Environments    
 ```bash
-$ ls $ENVS_HOME
+$ ls $WORKON_HOME
 ```
 
 ### Swap projects/environments    
