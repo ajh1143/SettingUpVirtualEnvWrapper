@@ -42,10 +42,15 @@ $ mkvirtualenv env_1
 $ mkvirtualenv env_2
 $ mkvirtualenv env_3
 ```
+**Useful Option**: Use -r to specify a file containing a list of packages you'd like installed upon construction of the environment.
 
 ### View Available Environments    
 ```bash
 $ ls $WORKON_HOME
+
+#or simply
+
+$ lsvirtualenv
 ```
 
 ### Swap projects/environments    
