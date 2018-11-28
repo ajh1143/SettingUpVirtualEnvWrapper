@@ -4,6 +4,8 @@ Cataloging the process for later reference
 # Why use virtualenvwrapper?     
 Easy organization of multiple virtual environments and simple streamlined commands. 
 
+<img src="https://github.com/ajh1143/ajh1143.github.io/blob/master/Images/envs/envs-2.jpg" class="inline"/><br>   
+
 ### Key Features     
 * Places all of your virtual environments in a single directory.
 * Wrappers for creating/copying/removing environments.
