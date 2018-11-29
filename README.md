@@ -82,7 +82,9 @@ rmvirtualenv env_1
 ```
 
 ### Deactivate
-If you wanted to remove `env_1` while you're already engaged with it, you'd first deactivate with `deactivate`. This will remove the parenthesized name on the left. 
+When you're finished working in an active virtual environment, you can end the session with `deactivate`, reflected by the removal of the parenthesized (env_1) affixed to the left of the money symbol.
+
+If you wanted to remove `env_1` while you're already engaged with it, you'd first deactivate with `deactivate`. 
 ```bash
 (env_1)$ deactivate
 ```
