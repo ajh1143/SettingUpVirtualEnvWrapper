@@ -39,6 +39,14 @@ $ export WORKON_HOME=~/Envs
 $ export PROJECT_HOME=$WORKON_HOME/Projects
 $ mkdir -p $WORKON_HOME
 ```
+**NOTE TO WINDOWS USERS:**    
+Use the following to add the lines to the bashrc file, you shouldn't edit it with any windows apps, it can cause issues and result in a necessary re-installation of Ubuntu. 
+``` echo 'export WORKON_HOME=~/Envs'>> ~/.bashrc ```
+``` echo 'export PROJECT_HOME=$WORKON_HOME/Projects' >> ~/.bashrc```
+``` echo 'source /usr/local/bin/virtualenvwrapper.sh' >> ~/.bashrc```
+
+**Additionally** you may need to use the following command as well if you're using Python3:
+``` echo 'export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3' >> ~/virtualenvwrapper.sh```
 
 ### Create new environments/projects   
 We can make a new environment by using `mkvirtualenv` followed by your desired environment name. 
