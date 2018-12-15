@@ -1,10 +1,12 @@
 # SettingUpVirtualEnvWrapper
 Cataloging the process for later reference
 
+_______________________________________________________________________________________________________________________________________
 # Why use virtualenvwrapper?     
 <img src="https://github.com/ajh1143/ajh1143.github.io/blob/master/Images/venv/venv-2.jpeg" class="inline"/><br> 
 Easy organization of multiple virtual environments and simple streamlined commands.   
 
+_______________________________________________________________________________________________________________________________________
 ### Key Features     
 * Places all of your virtual environments in a single directory.
 * Wrappers for creating/copying/removing environments.
@@ -13,6 +15,7 @@ Easy organization of multiple virtual environments and simple streamlined comman
 * User-defined operation hooks.
 * Plugin system for generating extensions.
 
+_______________________________________________________________________________________________________________________________________
 ## Installation Process    
 ### Basic virtualenv    
 Installing the base virtual env is outlined below.    
@@ -28,6 +31,8 @@ Use pip to install the package.
 ```bash
 $ pip install virtualenvwrapper
 ```
+
+_______________________________________________________________________________________________________________________________________
 ### Create a home directory for all your virtual environments.
 Now that we've installed `virtualenvwrapper`, let's start using it. We'll first set an environmental variable `WORKON_HOME`, and point it to our target folder `/Envs` rather than the default `~/.virtualenvs` location.
 
@@ -49,6 +54,7 @@ Use the following to add the lines to the bashrc file, you shouldn't edit it wit
 **Additionally** you may need to use the following command as well if you're using Python3:    
 ``` echo 'export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3' >> ~/virtualenvwrapper.sh```
 
+_______________________________________________________________________________________________________________________________________
 ### Create new environments/projects   
 We can make a new environment by using `mkvirtualenv` followed by your desired environment name. 
 ```bash
@@ -60,6 +66,7 @@ $ mkvirtualenv env_3
 Use `-r` to specify a file containing a list of packages you'd like installed upon construction of the environment.    
 *Example*: `$ mkvirtualenv env_4 -r file_with_listed_packages.txt`
 
+_______________________________________________________________________________________________________________________________________
 ### View Available Environments    
 We can view environments using `ls` with our environmental variable, or `lsvirtualenv`. 
 ```bash
@@ -69,18 +76,21 @@ $ ls $WORKON_HOME
 lsvirtualenv
 ```
 
+_______________________________________________________________________________________________________________________________________
 ### Swap projects/environments    
 Moving between environments is pleasantly simple, we can call `workon` with a desired environment name.
 ```bash
 (env_1)$ workon env_2
 ```
 
+_______________________________________________________________________________________________________________________________________
 ### Remove an environment
 We can remove environments with `rmvirtualenv` with the target name, but if it's an active directory we have to deactivate our instance first, which we'll do next. 
 ```bash
 rmvirtualenv env_1
 ```
 
+_______________________________________________________________________________________________________________________________________
 ### Deactivate
 When you're finished working in an active virtual environment, you can end the session with `deactivate`, reflected by the removal of the parenthesized (env_1) affixed to the left of the money symbol.
 
@@ -89,6 +99,7 @@ If you wanted to remove `env_1` while you're already engaged with it, you'd firs
 (env_1)$ deactivate
 ```
 
+_______________________________________________________________________________________________________________________________________
 ### Virtualenv Directory Shortcut
 To quickly hop to your virtual environment home directory, you can call `cdvirtualenv`.
 ```bash
